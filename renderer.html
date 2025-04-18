@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>1688商品采集器</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    input { width: 80%; padding: 10px; margin-bottom: 10px; }
+    button { padding: 10px 20px; }
+    img { max-width: 200px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h1>1688 商品采集器</h1>
+  <input type="text" id="url" placeholder="粘贴1688商品链接">
+  <button onclick="scrape()">采集商品信息</button>
+  <div id="result"></div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

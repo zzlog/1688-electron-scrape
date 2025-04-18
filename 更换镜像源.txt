@@ -1,0 +1,4 @@
+恢复为 npm 官方镜像源
+运行以下命令来切换回 npm 官方源（https://registry.npmjs.org/）：
+
+npm config set registry https://registry.npmjs.org/

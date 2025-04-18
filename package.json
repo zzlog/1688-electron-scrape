@@ -1,0 +1,37 @@
+{
+  "name": "1688-scraper-app",
+  "version": "1.0.0",
+  "description": "一个桌面版1688商品采集器",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.example.1688scraper",
+    "productName": "1688商品采集器",
+    "files": [
+      "**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.0.0"
+  },
+  "dependencies": {
+    "puppeteer": "^21.0.0"
+  }
+
+
+}
